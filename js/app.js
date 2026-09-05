@@ -725,7 +725,7 @@ const App = (() => {
   // Pensado para el modelo "control de acceso en la puerta": buscar por
   // DNI, dar de alta si no existe, marcar asistencia, ver estado de pago.
   // ---------------------------------------------------------------------
-  const MODALIDADES_GYM = { musculacion: 'Musculación', pilates: 'Pilates', ambas: 'Musculación + Pilates' };
+  const MODALIDADES_GYM = { musculacion: 'Musculación', funcional: 'Funcional', personalizado: 'Personalizado' };
 
   // Calcula si un socio está vencido: si pasaron más de 31 días desde su
   // último pago (o desde el alta, si nunca pagó). No depende de que nadie
@@ -773,8 +773,8 @@ const App = (() => {
         <select id="filtro-modalidad-socios">
           <option value="todas">Todas las modalidades</option>
           <option value="musculacion">Musculación</option>
-          <option value="pilates">Pilates</option>
-          <option value="ambas">Musculación + Pilates</option>
+          <option value="funcional">Funcional</option>
+          <option value="personalizado">Personalizado</option>
         </select>
       </div>
       <div id="lista-todos-socios" style="margin-top:.8rem"></div>
@@ -1032,8 +1032,8 @@ const App = (() => {
         <label class="campo"><span>Modalidad</span>
           <select id="input-modalidad-socio">
             <option value="musculacion" ${socioExistente?.modalidad === 'musculacion' ? 'selected' : ''}>Musculación</option>
-            <option value="pilates" ${socioExistente?.modalidad === 'pilates' ? 'selected' : ''}>Pilates</option>
-            <option value="ambas" ${socioExistente?.modalidad === 'ambas' ? 'selected' : ''}>Musculación + Pilates</option>
+            <option value="funcional" ${socioExistente?.modalidad === 'funcional' ? 'selected' : ''}>Funcional</option>
+            <option value="personalizado" ${socioExistente?.modalidad === 'personalizado' ? 'selected' : ''}>Personalizado</option>
           </select>
         </label>
         <label class="campo"><span>Días que entrena</span></label>

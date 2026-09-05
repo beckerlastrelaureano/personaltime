@@ -372,7 +372,7 @@ const FirebaseService = (() => {
     const yaExiste = (await ref.get()).exists;
     if (yaExiste) throw new Error('Ya existe un socio registrado con ese DNI.');
     const datos = {
-      nombre, apellido: apellido || '', modalidad, // 'musculacion' | 'pilates' | 'ambas'
+      nombre, apellido: apellido || '', modalidad, // 'musculacion' | 'funcional' | 'personalizado'
       dias: dias || [], diaPago: diaPago || '', descripcion: descripcion || '',
       entrenadorId: usuarioActual.uid,
       estadoCuota: 'al_dia',
