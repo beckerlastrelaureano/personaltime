@@ -1,13 +1,13 @@
 {
-  "name": "COMPLETAR-NOMBRE-CLIENTE — Panel de entrenador",
-  "short_name": "COMPLETAR",
+  "name": "Personal Time — Panel de entrenador",
+  "short_name": "P.Time",
   "description": "Gestioná a tus alumnos, asignales rutinas y seguí su progreso y asistencia.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0A0B0D",
-  "theme_color": "#787880",
+  "theme_color": "#C78325",
   "lang": "es",
   "icons": [
     { "src": "assets/iconos/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },

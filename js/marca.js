@@ -18,17 +18,17 @@
  */
 
 const MARCA = {
-  nombre: 'NOMBRE',
-  sufijo: 'GYM',
+  nombre: 'Personal',
+  sufijo: 'Time',
 
-  nombreCompleto: 'COMPLETAR-NOMBRE-CLIENTE',
+  nombreCompleto: 'Personal Time',
   descripcion: 'Gestioná a tus alumnos, asignales rutinas y seguí su progreso y asistencia.',
 
-  tagline: 'COMPLETAR TAGLINE',
+  tagline: 'Tu tiempo, tus resultados.',
 
-  colorAcento: '#787880',
-  colorAcentoClaro: '#A0A0A8',
-  colorAcentoRgb: '120, 120, 128',
+  colorAcento: '#C78325',
+  colorAcentoClaro: '#DFB781',
+  colorAcentoRgb: '199, 131, 37',
 };
 
 (function aplicarMarca() {
